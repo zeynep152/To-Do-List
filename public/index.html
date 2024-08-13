@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-Do List</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header"></div>
+        <div class="content">
+            <div class="new-todo-container"> 
+                <h1>New Todo:</h1>
+                <form id="new-todo">
+                <input type="text" id="new-todo-input">
+                <button type="submit">Add</button>
+                </form>
+            </div>
+            <div class="todo-list">
+                <div id="edit-section" class="edit-section" style="display: none;">
+                    <label>Edit:</label>
+                    <input type="text" id="edit-todo-input">
+                    <button id="save-edit">Save</button>
+                </div>
+                <ul id="todo-list"></ul>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

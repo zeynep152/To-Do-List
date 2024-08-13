@@ -1,0 +1,108 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    min-height: 100vh;
+    display: flex;
+}
+.header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    background-color: deeppink;
+    border-bottom: 2px solid #ccc; 
+    flex: 0 0 20%; 
+    padding: 20px; 
+}
+.content {
+    background-color: #f9f9f9;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+    display: flex;
+    flex: 1;
+}
+.new-todo-container, .todo-list {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px; 
+    max-width: 600px; 
+    padding: 20px; 
+    width: 100%; 
+}
+.new-todo-container h1 {
+    color: rgb(83, 82, 82);
+    margin-bottom: 10px;
+    font-size: 15px;
+    margin: 0;
+}
+.new-todo-container input{
+    border: 1px solid rgb(186, 184, 184);
+    border-radius: 3px;
+    height: 30px;
+    width: 90%;
+}
+.new-todo-container button{
+    background-color: deeppink;
+    border: 1px solid deeppink;
+    border-color: deeppink;
+    border-radius: 3px;
+    color: #ffffff;
+    cursor: pointer;
+    height: 30px;
+    width: 8%;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+    color: #656565;
+    display: flex;
+    padding: 10px;
+}
+li input[type="checkbox"] {
+    margin-right: 10px;
+}
+li .actions {
+    margin-left: auto;
+}
+li .actions img {
+    margin-left: 10px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+.edit-section {
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+}
+.edit-section  input{
+    border: 1px solid rgb(186, 184, 184);
+    border-radius: 3px;
+    color: #656565;
+    font-size: 15px;
+    width: 82%;
+    height: 30px;
+}
+.edit-section button{
+    background-color: #ffffff;
+    border-color: deeppink;
+    border: 2px solid deeppink;
+    color: deeppink;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 30px;
+    width: 8%;
+}
